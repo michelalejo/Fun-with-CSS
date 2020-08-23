@@ -1,0 +1,33 @@
+/*h2 a {
+  color: #991D3C;
+  text-decoration: none;
+}
+
+h2 > a:hover {
+  text-decoration-line: underline;
+  transition: text-decoration-line 3.25s linear;
+}*/
+h2 a {
+  color: #991D3C;
+  position: relative;
+  text-decoration: none;
+}
+
+h2 a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #991D3C;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+h2 a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+  color: #991D3C;
+}

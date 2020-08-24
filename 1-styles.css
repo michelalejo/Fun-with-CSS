@@ -1,12 +1,3 @@
-/*h2 a {
-  color: #991D3C;
-  text-decoration: none;
-}
-
-h2 > a:hover {
-  text-decoration-line: underline;
-  transition: text-decoration-line 3.25s linear;
-}*/
 h2 a {
   color: #991D3C;
   position: relative;
@@ -29,5 +20,4 @@ h2 a::before {
 h2 a:hover::before {
   visibility: visible;
   transform: scaleX(1);
-  color: #991D3C;
 }
